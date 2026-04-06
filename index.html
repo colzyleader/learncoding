@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Learning Website</title>
+    <style>
+      :root {
+        --bg: #f5f7ff;
+        --card: #ffffff;
+        --text: #1f2937;
+        --primary: #2563eb;
+        --primary-dark: #1d4ed8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 760px;
+        margin: 48px auto;
+        padding: 16px;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 14px;
+        box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
+        padding: 24px;
+      }
+
+      h1 {
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+
+      .small {
+        opacity: 0.8;
+        margin-top: 0;
+      }
+
+      button {
+        border: 0;
+        border-radius: 10px;
+        background: var(--primary);
+        color: #fff;
+        padding: 12px 18px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: var(--primary-dark);
+      }
+
+      .box {
+        margin-top: 18px;
+        padding: 14px;
+        border-radius: 10px;
+        background: #eff6ff;
+      }
+
+      code {
+        background: #eef2ff;
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <!-- EDIT #1: Change this title text -->
+        <h1 id="title">Welcome to freeCodeCamp</h1>
+
+        <!-- EDIT #2: Change this paragraph about yourself -->
+        <p class="small">
+          My name is <strong>Your Name</strong> and I am learning web development.
+        </p>
+
+        <button id="btn">Click me</button>
+
+        <div class="box" id="message">
+          Start by editing text in this file, then save and refresh the browser.
+        </div>
+
+        <p class="small">
+          Tip: search for <code>EDIT #</code> in this file to find things you can
+          change.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      // EDIT #3: Change this message.
+      const learningMessage = "Nice! You just used JavaScript.";
+
+      const btn = document.getElementById("btn");
+      const message = document.getElementById("message");
+
+      btn.addEventListener("click", function () {
+        message.textContent = learningMessage;
+      });
+    </script>
+  </body>
+</html>
